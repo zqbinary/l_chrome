@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  //扩展名称
+  "name": "我的时钟",
+  "version": "1.0",
+  "description": "我的第一chrome 扩展",
+  //TODO 图片改格式
+  //扩展相关图片
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  //图标放工具栏
+  "browser_action": {
+    "default_icon":{
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    },
+    //鼠标悬停显示
+    "default_title": "我的时钟",
+    //单机图标显示页面
+    "default_popup":"popup.html"
+  }
+}
