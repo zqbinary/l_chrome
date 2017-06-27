@@ -25,4 +25,5 @@ httpRequest('http://pv.sohu.com/cityjson?ie=utf-8', function (result) {
 /**
  1. 写的时候可以在html 里带上script 标签, 方便调试
  2. TODO 但是以上就有跨域的问题,
+ 3. TODO 想试一下 localhost 可以做服务器吗,
  */
