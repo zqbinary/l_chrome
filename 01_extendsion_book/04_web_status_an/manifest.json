@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Google状态",
+  "version": "1.0",
+  "description": "监视Google 是否在线,本扩展常驻后台",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "browser_action": {
+    "default": {
+      "19": "images/icon19",
+      "38": "images/icon38"
+    },
+    "default_title": "查看google状态",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["js/status.js"]
+
+  },
+
+  "permissions": [
+    //这里有限制,比如必须协议对
+    //必须最后有个/ 否则有警告
+    "https://www.baidu.com/"
+  ]
+}
