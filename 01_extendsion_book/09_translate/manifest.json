@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "translate",
+  "version": "1.0",
+  "description": "translate what you select with ",
+  "icons": {
+    "16": "images/icon16.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/"],
+
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "contextMenus"
+  ]
+}
